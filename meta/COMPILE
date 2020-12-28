@@ -1,0 +1,10 @@
+
+# 生成configure
+./autogen.sh
+
+# 编译
+./configure --prefix=/opt/spandsp \
+    --sysconfdir=/opt/spandsp/conf \
+    CPPFLAGS="-I/opt/libtiff/include" \
+    LDFLAGS="-L/opt/libtiff/lib"
+
